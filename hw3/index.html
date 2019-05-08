@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- API Gateway SDK -->
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+  <script type="text/javascript" src="js/vendor/apiGateway-js-sdk/apigClient.js"></script>
+
+  <!-- AWS SDK -->
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.415.0.min.js"></script>
+
+  
+</head>
+<body class="pg">
+<div class="container h-100">
+	<div class="row h-50 justify-content-center align-items-center">
+	  <div class="col-md-6">
+	  	<div class="input-group mb-3">
+			  <input type="text" class="form-control" placeholder="Search" id="query">
+			  <div class="input-group-append">
+			    <button class="btn btn-info" id="search">Search</button> 
+			  </div>
+			</div>
+	  </div>
+	</div>
+	<div class="row justify-content-center align-items-center">
+	  <div class="col-md-6">
+	  	<form id="img_upload">
+		  <!-- <div class="form-group justify-content-md-center"> -->
+		    <label for="exampleFormControlFile1">Choose a picture to upload</label>
+		    <input type="file" class="form-control-file" id="image">
+		    <br>
+		    <button class="btn btn-info" type="submit" id="upload">Upload</button> 
+		  <!-- </div> -->
+		</form>
+	  </div>
+	</div>
+  <br>
+
+  <div class="row" id='gallery'>
+
+  </div>
+</div>
+
+</body>
+</html>
